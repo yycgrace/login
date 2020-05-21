@@ -22,21 +22,22 @@
 MySQL資料庫設計
 資料庫:(punch_system)EIP員工入口網站
    資料表:members
-      id(key)員工編號staffID
+      id(key)
+      staff_id員工編號
       pw
       dep部門(department)
       name姓名
       join_date入職日
       *帳號密碼需有預設值,首次登入
    資料表:dep
-      dep_id部門編號
-      dep_type部門
+      id部門編號
+      dep部門
    資料表:admin
-      admin_id
-      admin_pw
+      id
+      pw
 
    (補充功能)資料表:info
-      id(key)員工編號staffID
+      staff_id(key)員工編號staffID
       email
       phone
       birthday生日
@@ -44,11 +45,11 @@ MySQL資料庫設計
       update_time
       (undergo經歷)
    (補充功能)資料表:record
-      id(key)員工編號staffID
+      staff_id(key)員工編號staffID
       type(in/out)
       time
    (補充功能)資料表:request_form
-      id(key)員工編號staffID
+      staff_id(key)員工編號staffID
       type事病假
       start_time開始時間
       end_time結束時間
@@ -64,3 +65,14 @@ EIP(enterprise information portal)企業(資訊)入口網站
 (payroll calculation薪酬計算)
 (request form需求表/請假單)
 (recruitment招募員工)
+
+#### 2020-05-20
+規劃eip功能及readme撰寫
+表單及sql語法架構
+
+#### 2020-05-21
+架設資料庫
+表單、sql語法、資料庫連接初步除錯
+
+## 待辦:
+測試資料輸出輸入
